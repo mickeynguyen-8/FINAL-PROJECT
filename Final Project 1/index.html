@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kahoot Quiz</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="quiz">
+            <div id="tittle">Quiz Time</div>
+            <div id="countdown-area"></div>
+            <div id="question"></div>
+            <div id="images"></div>
+            <label class="option"><input type="radio" name="option" value="1" /><span id="opt1"> </span></label>
+            <label class="option"><input type="radio" name="option" value="2" /><span id="opt2"> </span></label>
+            <label class="option"><input type="radio" name="option" value="3" /><span id="opt3">  </span></label>
+            <label class="option"><input type="radio" name="option" value="4" /><span id="opt4">  </span></label>
+            <button id="next-button" onclick="loadNextQuestion();">Next question</button>
+        </div>
+        <div id='result'>
+            <div id="message"></div>
+            <div id="gif-source"></div>
+            <div id="score"></div>
+        </div>
+        <script src="question.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
